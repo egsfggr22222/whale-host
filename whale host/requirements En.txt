@@ -1,0 +1,23 @@
+# whale host — third-party dependencies
+# Tested on Python 3.10 (3.8+ should work, unverified)
+#
+# Notes:
+#   PyQt6 and sounddevice are not installed into the system Python on this machine;
+#   subtitle.py / speech.py will preferentially borrow them from
+#   C:\Users\computer\Desktop\B2\Tour guide\library.
+#   When that directory doesn't exist, just install them as below.
+
+# Subtitle window (PyQt6)
+PyQt6>=6.5
+
+# Speech synthesis: Windows OneCore engine, offline
+winsdk>=1.0.0b10
+
+# Audio playback
+sounddevice>=0.4.6
+
+# Numerical computing (speech resampling, playback buffer)
+numpy>=1.24
+
+# pytools client library (already in the dsh-python-tools directory locally, no pip install needed)
+# pytools_client  — provided by the plugin via PYTHONPATH
